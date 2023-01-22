@@ -21,10 +21,16 @@ This README file goes over the basics of REGEX aka Regular Expressions, goes ove
 
 Anchors have special meaning in regular expressions. They do not match any character. Instead, they match a position before or after characters:
 
-`^` – The caret anchor matches the beginning of the text.  
-`$` – The dollar anchor matches the end of the text.
+- `^` – The caret anchor matches the beginning of the text.
+- `$` – The dollar anchor matches the end of the text.
 
 ### Quantifiers
+
+- The quantities `n` and `m` are integer constants.
+- Ordinarily, quantifiers are greedy.
+- They cause the regular expression engine to match as many occurrences of particular patterns as possible.
+- Appending the `?` character to a quantifier makes it lazy.
+- It causes the regular expression engine to match as few occurrences as possible.
 
 ### Grouping Constructs
 
